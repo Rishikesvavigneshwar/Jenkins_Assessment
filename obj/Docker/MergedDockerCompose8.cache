@@ -1,0 +1,60 @@
+name: dockercompose9380205403233390720
+services:
+  backend:
+    build:
+      context: D:\Asp\Docker Training\DockerTesting\Campus_EventAggregator\CampusEventAggregator
+      dockerfile: Dockerfile
+    container_name: dotnet_api
+    depends_on:
+      mysql:
+        condition: service_started
+        required: true
+    environment:
+      ConnectionStrings__DefaultConnection: Server=mysql;Port=3306;Database=campusdb;User=root;Password=12345;
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5000
+        published: "5001"
+        protocol: tcp
+  frontend:
+    build:
+      context: D:\Asp\Docker Training\DockerTesting\Campus_EventAggregator\campus_frontend
+      dockerfile: Dockerfile
+    container_name: react_frontend
+    depends_on:
+      backend:
+        condition: service_started
+        required: true
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "3000"
+        protocol: tcp
+  mysql:
+    container_name: mysql_db
+    environment:
+      MYSQL_DATABASE: campusdb
+      MYSQL_ROOT_PASSWORD: "12345"
+    image: mysql:8.0
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 3306
+        published: "3307"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: mysql_data
+        target: /var/lib/mysql
+        volume: {}
+networks:
+  default:
+    name: dockercompose9380205403233390720_default
+volumes:
+  mysql_data:
+    name: dockercompose9380205403233390720_mysql_data

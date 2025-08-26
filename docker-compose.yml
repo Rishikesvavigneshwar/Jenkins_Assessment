@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_DATABASE: campusdb
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    build:
+      context: ./CampusEventAggregator
+    container_name: dotnet_api
+    ports:
+      - "5001:5000"
+    depends_on:
+      - mysql
+    environment:
+      ConnectionStrings__DefaultConnection: Server=mysql;Port=3306;Database=campusdb;User=root;Password=12345;
+
+  # frontend:
+  #   build:
+  #     context: ./campus_frontend
+  #   container_name: react_frontend
+  #   ports:
+  #     - "3000:80"
+  #   depends_on:
+  #     - backend
+
+volumes:
+  mysql_data:

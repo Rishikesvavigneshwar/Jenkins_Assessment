@@ -1,0 +1,6 @@
+@CampusEventAggregator_HostAddress = http://localhost:5067
+
+GET {{CampusEventAggregator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
