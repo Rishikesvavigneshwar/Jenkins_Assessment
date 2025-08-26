@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Asp\\Docker Training\\DockerTesting\\Campus_EventAggregator\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6CCCA1D2-9CDA-45F5-93B8-F939B372D543}|CampusEventAggregator\\CampusEventAggregator.csproj|d:\\asp\\docker training\\dockertesting\\campus_eventaggregator\\campuseventaggregator\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCCA1D2-9CDA-45F5-93B8-F939B372D543}|CampusEventAggregator\\CampusEventAggregator.csproj|solutionrelative:campuseventaggregator\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{67B37C25-45FE-43A1-9310-F03AC51FF4B3}|..\\TestCampus\\TestCampus.csproj|d:\\asp\\docker training\\dockertesting\\testcampus\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -16,10 +20,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6CCCA1D2-9CDA-45F5-93B8-F939B372D543}|CampusEventAggregator\\CampusEventAggregator.csproj|d:\\asp\\docker training\\dockertesting\\campus_eventaggregator\\campuseventaggregator\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{6CCCA1D2-9CDA-45F5-93B8-F939B372D543}|CampusEventAggregator\\CampusEventAggregator.csproj|solutionrelative:campuseventaggregator\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CCCA1D2-9CDA-45F5-93B8-F939B372D543}|CampusEventAggregator\\CampusEventAggregator.csproj|d:\\asp\\docker training\\dockertesting\\campus_eventaggregator\\campuseventaggregator\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CCCA1D2-9CDA-45F5-93B8-F939B372D543}|CampusEventAggregator\\CampusEventAggregator.csproj|solutionrelative:campuseventaggregator\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CCCA1D2-9CDA-45F5-93B8-F939B372D543}|CampusEventAggregator\\CampusEventAggregator.csproj|d:\\asp\\docker training\\dockertesting\\campus_eventaggregator\\campuseventaggregator\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -53,7 +53,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "D:\\Asp\\Docker Training\\DockerTesting\\TestCampus\\UnitTest1.cs",
               "RelativeDocumentMoniker": "..\\TestCampus\\UnitTest1.cs",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\Asp\\Docker Training\\DockerTesting\\Campus_EventAggregator\\CampusEventAggregator\\Dockerfile",
               "RelativeDocumentMoniker": "CampusEventAggregator\\Dockerfile",
@@ -90,12 +90,11 @@
               "RelativeToolTip": "CampusEventAggregator\\Dockerfile",
               "ViewState": "AgIAAAEAAAAAAAAAAAAmwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-19T10:29:39.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T10:29:39.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Asp\\Docker Training\\DockerTesting\\Campus_EventAggregator\\CampusEventAggregator\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "CampusEventAggregator\\Controllers\\UserController.cs",
@@ -116,12 +115,11 @@
               "RelativeToolTip": "CampusEventAggregator\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-19T10:34:09.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T10:34:09.294Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "D:\\Asp\\Docker Training\\DockerTesting\\Campus_EventAggregator\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -129,12 +127,11 @@
               "RelativeToolTip": "docker-compose.yml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-08-19T10:51:30.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T10:51:30.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\Asp\\Docker Training\\DockerTesting\\Campus_EventAggregator\\CampusEventAggregator\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "CampusEventAggregator\\Controllers\\WeatherForecastController.cs",
@@ -142,8 +139,7 @@
               "RelativeToolTip": "CampusEventAggregator\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T10:30:21.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T10:30:21.573Z"
             },
             {
               "$type": "Document",
